@@ -1,0 +1,39 @@
+﻿
+<div class="container">
+	  
+	<div class="row">
+		<div class="col-xs-6 col-md-6">
+		 
+			<form class="form-horizontal"  role="form" action="" method="post">
+
+				<input type="text" class="form-control" name="field_symbasioyxos[]"/>
+
+				<button href="javascript: return null;" id="add-more1" class="btn btn-primary">Νεό πεδίο</button>
+
+				<input type="submit" class="btn btn-success" value="Προσθήκη" />
+
+			</form>
+		
+
+				
+	</div>	
+			
+	<div class="col-xs-6 col-md-6">
+		<form action="" method="post">
+
+			<input class="form-control" type="text" name="field_katastasi[]"/>
+
+				<button href="javascript: return null;"  id="add-more2" class="btn btn-primary">Νεό πεδίο</button>
+
+				<input type="submit" class="btn btn-success" value="Προσθήκη"/>
+
+		</form>
+	</div>
+		
+	</div>
+</div>
+
+
+
+
+

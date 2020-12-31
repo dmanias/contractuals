@@ -1,0 +1,4 @@
+﻿<?php
+$content='include/add_contractualData.php';
+include ('master.php');
+?>

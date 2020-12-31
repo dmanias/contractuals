@@ -1,0 +1,26 @@
+﻿ <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+		  
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="add_phd.php">Εισαγωγή διδακτορικού</a></li>
+            <li><a href="search_phd.php">Αναζήτηση διδακτορικών</a></li>
+			<li><a href="alert_phd.php">Ειδοποιήσεις</a></li>
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="contact.html">Επικοινωνία</a></li>
+			<li><a href="index.php">Αποσύνδεση</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>

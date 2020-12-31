@@ -1,0 +1,80 @@
+/*.row{
+border:thin solid #001A77; 
+font-size:22px; color:#001A77;
+margin:1px;
+padding:1px;
+
+}*/
+
+
+hr{
+line-height: 1.0!important;
+margin-top: 10px!important;
+margin-bottom: 10px!important;
+}
+
+.table{
+border-collapse: collapse;
+}
+
+.navbar li:hover{
+background-color:#428bca;
+}
+
+.navbar a:hover{
+color:white;
+}
+
+.vertical{
+display:block;
+float: left;
+clear: left;
+}
+
+.navbar a{
+line-height: 10px;
+padding:5px!important;
+font-size:
+}
+	
+hr{
+border-bottom: 1px solid grey;
+}
+
+/*
+.jumbotron-div{
+margin-top:91px;
+}*/
+
+.form-signin{
+margin-top:50px;
+}
+
+/*
+.jumbotron-div{
+margin-top:0px;
+}*/
+
+.navbar{
+border-bottom:3px solid grey;
+}
+
+.navbar li{
+margin-right:40px;
+font-size:16px;
+}
+
+.content-div{
+margin-top:130px;
+}
+
+#contractual-tabs{
+font-size:13px;
+}
+
+*{
+font-family:'Candara';
+}
+
+
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ε.Α.Π.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	<link href="css/docs.css" rel="stylesheet">
+	
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+
+      <script src="js/html5shiv.js"></script>
+  
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="ico/eap-favicon1.gif">
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+  
+    <div id="wrap">
+  
+  
+  <!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+ <div class="container">
+ 
+	<div class="header">
+ 
+	<div class="logo"> 
+	
+	<a href='./index.php' >
+	
+	<img src="img/eap-logo.png" alt="logo" /> 
+	
+	</a>
+	</div>
+	
+    <div class="title" >
+	
+    <span>ΣΕΛΙΔΑ ΗΛΕΚΤΡΟΝΙΚΩΝ ΠΛΗΡΩΜΩΝ</span>
+	
+	</div>
+	
+	</div>
+ 
+  </div>
+ 
+ 
+
+</header>
+
+
+  <div class="container">
+
+	<div class='expand'>
+  
+      <form class='form-signin'  role='form' name=form method=post action=send.php onsubmit='return checkform(this);'>
+
+
+    <h3 class='form-signin-heading'>Στοιχεία επικοινωνίας</h3>
+	
+    <input name=fullname type='text' class='input-block-level'  placeholder='Όνομα & Επώνυμο χρήστη'> 
+
+    <input name=id type='text' class='input-block-level' placeholder='Αρ. Μητρώου'>
+		
+
+    <input name='phone' type='text' class='input-block-level' placeholder='Αρ. Τηλεφώνου'> 
+	<input name='email' type='text' class='input-block-level' placeholder='E-mail'> 
+	<textarea name='message' rows='6' cols='27' class='input-block-level' >Περιγραφή προβλήματος</textarea> 
+
+	<input class="btn btn-large btn-primary" type="submit" value='Υποβολή'>
+	<span align='right'>
+	<input class="btn btn-large btn-primary" type="reset" value='Καθαρισμός'>
+	</span>
+	
+		<!--////////////CAPTCHA///////////////-->
+		<p><br>
+		<label for="code">Εισάγετε τον κωδικό ασφαλείας > <span id="txtCaptchaDiv" style="color:#F00"></span><!-- this is where the script will place the generated code -->
+		<input type="hidden" id="txtCaptcha" /></label><!-- this is where the script will place a copy of the code for validation: this is a hidden field -->
+		<input type="text" name="txtInput" id="txtInput" class="input-block-level" placeholder="Κωδικός ασφαλείας"/>
+		</br></p>
+	
+     </form>
+
+	 </div> <!-- /expand-->
+	 
+    </div> <!-- /container -->
+	</div> <!-- /wrap -->
+	
+		<div id="footer">
+	
+			<div class="form-signin"><p>      © ΕΑΠ 2014
+<br>Γραφείο Διακτυακών και Πληροφοριακών Υπηρεσιών
+<br>Τμήμα Εγκαταστάσεων και Εκτέλεσης Έργων
+<br><a href="http://www.eap.gr/" style="color:#00008B;" target="_blank"><img src="img/EAPsmall.png" alt="eap" width="40" height="35" style="vertical-align:middle;"> Ελληνικό Ανοικτό Πανεπιστήμιο</a></P>
+	
+		</div>
+    </div>
+	
+
+
+    <!-- Le javascript
+ ================================================== --> 
+    <!-- Placed at the end of the document so the pages load faster -->
+	
+    <script src="js/custom/captcha.js"></script>
+  
+    <!-- bootstrap -->
+	
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
