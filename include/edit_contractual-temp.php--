@@ -1,0 +1,562 @@
+﻿<div class="container">
+	<form class="form-horizontal" role="form"  method="POST" action="change_contractual.php">
+
+	
+	<ul class="nav nav-tabs" >
+		<li class="active"><a href="#stoxeiagenika" data-toggle="tab">Στοιχεία Γενικά</a></li>
+		<li><a href="#stoixeiaprosopika" data-toggle="tab">Στοιχεία Προσωπικά</a></li>
+		<li><a href="#stoixeiaedras" data-toggle="tab">Στοιχεία Έδρας-Αλληλογραφίας</a></li>
+		<li><a href="#stoixeiakatigorias" data-toggle="tab">Στοιχεία Κατηγορίας-Ειδικότητας</a></li>
+		<li><a href="#stoixeiaanathesisergou" data-toggle="tab">Στοιχεία Ανάθεσης Έργου</a></li>
+		<li><a href="#stoixeiatrexoysassymvasis" data-toggle="tab">Στοιχεία Τρέχουσας Σύμβασης</a></li>
+	</ul>
+		
+	<div  class="tab-content">
+		
+			<!----------	Στοιχεία Γενικά ----->
+		
+	<div id="stoxeiagenika" class="tab-pane fade in active">
+	
+		<div class="form-group">
+			<label for="name"  >Στοιχεία Γενικά</label>
+		</div>
+
+		<div class="form-group">
+			<label for="eponymo" class="col-sm-2 control-label" >Επώνυμο</label>
+			<div class="col-sm-10">
+				<input type="text" name="eponymo" class="form-control" id="eponymo"  value="<?php echo $contractual->eponymo ?>">
+			</div>
+		</div>		
+		
+		
+		<div class="form-group">
+			<label for="onoma" class="col-sm-2 control-label" >Όνομα</label>
+			<div class="col-sm-10">
+				<input type="text" name="onoma" class="form-control" id="onoma" value="<?php echo $contractual->onoma ?>">
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<label for="patronymo" class="col-sm-2 control-label" >Πατρώνυμο</label>
+			<div class="col-sm-10">
+				<input type="text" name="patronymo" class="form-control" id="patronymo" value="<?php echo $contractual->patronymo ?>">
+			</div>
+		</div>		
+
+		<div class="form-group">
+			<label for="adt" class="col-sm-2 control-label" >Α.Δ.Τ.</label>
+			<div class="col-sm-10">
+				<input type="text" name="adt" class="form-control" id="adt"  value="<?php echo $contractual->adt ?>">
+			</div>
+		</div>	
+	
+		
+		<div class="form-group">
+			<label for="afm" class="col-sm-2 control-label" >Α.Φ.Μ.</label>
+			<div class="col-sm-10">
+				<input type="text" name="afm" class="form-control" id="afm"  value="<?php echo $contractual->afm ?>">
+			</div>
+		</div>
+		
+	
+		<div class="form-group">
+			<label for="doy" class="col-sm-2 control-label" >Δ.Ο.Υ.</label>
+			<div class="col-sm-10">
+				<input type="text" name="doy" class="form-control" id="doy" value="<?php echo $contractual->doy ?>">
+			</div>
+		</div>
+	
+		<div class="form-group">
+			<label for="mitroomisthodotoymenoy" class="col-sm-2 control-label" >Μητρώο Μισθοδοτούμενου</label>
+			<div class="col-sm-10">
+				<input type="text" name="mitroomisthodotoymenoy" class="form-control" id="mitroomisthodotoymenoy"  value="<?php echo $contractual->mitroomisthodotoymenoy ?>">
+			</div>
+		</div>	
+
+		<div class="form-group">
+			<label for="anathesiergoy" class="col-sm-2 control-label" >Ανάθεση Έργου</label>
+				<div class="col-sm-10">
+					<input type="text" name="anathesiergoy" class="form-control" id="anathesiergoy"  value="<?php echo $contractual->anathesiergoy ?>">
+			</div>
+		</div>		
+
+		<div class="form-group">
+			<label for="katastasi" class="col-sm-2 control-label" >Κατάσταση</label>
+				<div class="col-sm-10">
+					<input type="text" name="katastasi" class="form-control" id="katastasi"  value="<?php echo $contractual->anathesiergoy ?>">
+			</div>
+		</div>	
+
+		
+
+</div>
+		
+		<!----------	Στοιχεία Προσωπικά ----->
+		
+	<div id="stoixeiaprosopika" class="tab-pane fade">
+	
+
+		<div class="form-group">
+			<label for="name"  >Στοιχεία Προσωπικά</label>
+		</div>
+		
+		<div class="form-group">
+			<label for="fylo" class="col-sm-2 control-label" >Φύλο</label>
+			<div class="col-sm-10">
+				<input type="text" name="fylo" class="form-control" id="fylo"  value="<?php echo $contractual->fylo ?>">
+			</div>
+		</div>	
+		
+		
+		<div class="form-group">
+			<label for="oikogeneiakikatastasi" class="col-sm-2 control-label" >Οικογενειακή Κατάσταση</label>
+			<div class="col-sm-10">
+				<input type="text" name="oikogeneiakikatastasi" class="form-control" id="oikogeneiakikatastasi"  value="<?php echo $contractual->oikogeneiakikatastasi ?>">
+			</div>
+		</div>	
+
+		<div class="form-group">
+			<label for="stratiotikesypoxreoseis" class="col-sm-2 control-label" >Στρατιωτικές Υποχρεώσεις</label>
+			<div class="col-sm-10">
+				<input type="text" name="stratiotikesypoxreoseis" class="form-control" id="stratiotikesypoxreoseis"  value="<?php echo $contractual->stratiotikesypoxreoseis ?>">
+			</div>
+		</div>			
+		
+		<div class="form-group">
+			<label for="imerominiagennisis" class="col-sm-2 control-label" >Ημερομηνία Γέννησης</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="imerominiagennisis" id="imerominiagennisis" value="<?php echo $contractual->imerominiagennisis ?>">
+			</div>
+		</div>			
+
+		<div class="form-group">
+			<label for="ilikia" class="col-sm-2 control-label" >Ηλικία</label>
+			<div class="col-sm-10">
+				<input type="text" min="17" max="99" class="form-control" id="ilikia" name="ilikia" value="<?php echo $contractual->ilikia ?>">
+			</div>
+		</div>	
+
+		<div class="form-group">
+			<label for="onomastikieorti" class="col-sm-2 control-label" >Ονομαστική Εορτή</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="onomastikieorti" id="onomastikieorti" value="<?php echo $contractual->onomastikieorti ?>">
+			</div>
+		</div>		
+		
+		
+	</div>
+	
+	<!----------	Στοιχεία Έδρας-Αλληλογραφίας ----->
+	
+	<div id="stoixeiaedras" class="tab-pane fade">
+	
+
+		<div class="form-group">
+			<label for="name"  >Στοιχεία Έδρας-Αλληλογραφίας</label>
+		</div>
+		
+
+		<div class="form-group">
+			<label for="odos" class="col-sm-2 control-label" >Οδός</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="odos" id="odos"  value="<?php echo $contractual->odos ?>">
+			</div>
+		</div>			
+
+		<div class="form-group">
+			<label for="arithmos" class="col-sm-2 control-label" >Αριθμός</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="arithmos" name="arithmos"  value="<?php echo $contractual->arithmos ?>">
+			</div>
+		</div>	
+
+		<div class="form-group">
+			<label for="tk" class="col-sm-2 control-label" >Τ.Κ.</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="tk" id="tk"  value="<?php echo $contractual->tk ?>">
+			</div>
+		</div>		
+		
+		<div class="form-group">
+			<label for="perioxi" class="col-sm-2 control-label" >Περιοχή</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="perioxi" id="perioxi" value="<?php echo $contractual->perioxi ?>">
+			</div>
+		</div>	
+		
+		<div class="form-group">
+			<label for="katoikos" class="col-sm-2 control-label" >Κάτοικος</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="katoikos" id="katoikos"  value="<?php echo $contractual->katoikos ?>">
+			</div>
+		</div>				
+		
+		<div class="form-group">
+			<label for="dimos" class="col-sm-2 control-label" >Δήμος</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="dimos" id="dimos" value="<?php echo $contractual->dimos ?>">
+			</div>
+		</div>			
+		
+	</div>
+	
+	
+	<!----------	Στοιχεία Κατηγορίας-Ειδικότητας ----->
+	<div id="stoixeiakatigorias" class="tab-pane fade">
+	
+
+		<div class="form-group">
+			<label for="name"  >Στοιχεία Κατηγορίας-Ειδικότητας</label>
+		</div>
+		
+		<div class="form-group">
+			<label for="thesi" class="col-sm-2 control-label" >Θέση</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="thesi" id="thesi" value="<?php echo $contractual->thesi ?>">
+			</div>
+		</div>	
+
+		<div class="form-group">
+			<label for="katigoriaendiaferontos" class="col-sm-2 control-label" >Κατηγορία <br><small>(με βάση την πρόσκληση εκδήλωσης ενδιαφέροντος)</small></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" name="katigoriaendiaferontos" id="katigoriaendiaferontos" value="<?php echo $contractual->katigoriaendiaferontos ?>">
+				</div>
+		</div>	
+		
+		
+		<div class="form-group">
+			<label for="eidikotitaendiaferontos" class="col-sm-2 control-label" >Ειδικότητα <br><small>(με βάση την πρόσκληση εκδήλωσης ενδιαφέροντος)</small></label>
+				<div class="col-sm-10">
+					<textarea id="eidikotitaendiaferontos" class="form-control" name="eidikotitaendiaferontos" cols="25" rows="5"><?php echo $contractual->katigoriaendiaferontos ?></textarea>
+				</div>
+		</div>	
+
+		<div class="form-group">
+			<label for="katigoriafakelos" class="col-sm-2 control-label" >Κατηγορία <br><small>(με βάση το φάκελο υποψηφιότητας)</small></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" name="katigoriafakelos" id="katigoriafakelos" value="<?php echo $contractual->katigoriafakelos ?>">
+				</div>
+		</div>	
+
+		<div class="form-group">
+			<label for="eidikotitafakelos" class="col-sm-2 control-label" >Ειδικότητα <br><small>(με βάση το φάκελο υποψηφιότητας)</small></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" name="eidikotitafakelos" id="eidikotitafakelos" value="<?php echo $contractual->eidikotitafakelos ?>">
+				</div>
+		</div>			
+		<div class="form-group">
+			<label for="dimosiosypallilos" class="col-sm-2 control-label" >Δημόσιος Υπάλληλος</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="dimosiosypallilos" id="dimosiosypallilos" value="<?php echo $contractual->dimosiosypallilos ?>">
+			</div>
+		</div>				
+	</div>
+
+	
+<!----------	Στοιχεία Ανάθεσης Έργου ----->
+	
+	<div id="stoixeiaanathesisergou" class="tab-pane fade">
+
+		<div class="form-group">
+			<label for="name"  >Στοιχεία Ανάθεσης Έργου</label>
+		</div>
+
+		<div class="form-group">
+			<label for="xrisiegkatastaseon" class="col-sm-2 control-label" >Χρήση Εγκαταστάσεων </label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" name="xrisiegkatastaseon" id="xrisiegkatastaseon" value="<?php echo $contractual->xrisiegkatastaseon ?>">
+				</div>
+		</div>	
+		
+		
+		<div class="form-group">
+			<label for="eidosapasxolisis" class="col-sm-2 control-label" >Είδος Απασχόλησης</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" name="eidosapasxolisis" id="eidosapasxolisis" value="<?php echo $contractual->eidosapasxolisis ?>">
+				</div>
+		</div>	
+
+		<div class="form-group">
+			<label for="toposapasxolisis" class="col-sm-2 control-label" >Τόπος Απασχόλησης</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" name="toposapasxolisis" id="toposapasxolisis" value="<?php echo $contractual->toposapasxolisis ?>">
+				</div>
+		</div>
+		
+		<div class="form-group">
+			<label for="xorosapasxolisis" class="col-sm-2 control-label" >Χώρος Απασχόλησης</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" name="xorosapasxolisis" id="xorosapasxolisis" value="<?php echo $contractual->xorosapasxolisis ?>">
+				</div>
+		</div>			
+
+		
+		<div class="form-group">
+			<label for="dieuthynsiapasxolisis" class="col-sm-2 control-label" >Διεύθυνση Απασχόλησης</label>
+			<div class="col-sm-10">
+				<textarea id="dieuthynsiapasxolisis" class="form-control" name="dieuthynsiapasxolisis" cols="25" rows="5"><?php echo $contractual->dieuthynsiapasxolisis ?></textarea>
+			</div>
+		</div>	
+
+		<div class="form-group">
+			<label for="emailergasias" class="col-sm-2 control-label" >Email Εργασίας</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="emailergasias" id="emailergasias" value="<?php echo $contractual->emailergasias ?>">
+			</div>
+		</div>	
+		
+		<div class="form-group">
+			<label for="tilefonoergasias" class="col-sm-2 control-label" >Τηλέφωνο Εργασίας</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="tilefonoergasias" id="tilefonoergasias" value="<?php echo $contractual->tilefonoergasias ?>">
+			</div>
+		</div>		
+
+		<div class="form-group">
+			<label for="faxergasias" class="col-sm-2 control-label" >Fax Εργασίας</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="faxergasias" id="faxergasias" value="<?php echo $contractual->faxergasias ?>">
+			</div>
+		</div>	
+
+		<div class="form-group">
+			<label for="tilefonokinito" class="col-sm-2 control-label" >Τηλέφωνο Κινητό</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="tilefonokinito" id="tilefonokinito" value="<?php echo $contractual->tilefonokinito ?>">
+			</div>
+		</div>	
+
+		<div class="form-group">
+			<label for="enarksianathesisergoyeap" class="col-sm-2 control-label" >Έναρξη Ανάθεσης Έργου στο Ε.Α.Π.</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="enarksianathesisergoyeap" id="enarksianathesisergoyeap" value="<?php echo $contractual->enarksianathesisergoyeap ?>">
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<label for="enarksianathesisergoyespa" class="col-sm-2 control-label" >Έναρξη Ανάθεσης Έργου στο ΕΣΠΑ</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="enarksianathesisergoyespa" id="enarksianathesisergoyespa" value="<?php echo $contractual->enarksianathesisergoyespa ?>">
+			</div>
+		</div>		
+
+		<div class="form-group">
+			<label for="diadikasiaanathesisergoy" class="col-sm-2 control-label" >Διαδικασία Ανάθεσης Έργου στο ΕΣΠΑ <small>(Βάσει οποίας επελέγει)</small></label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="diadikasiaanathesisergoy" id="diadikasiaanathesisergoy"  value="<?php echo $contractual->diadikasiaanathesisergoy ?>">
+			</div>
+		</div>	
+		
+		<div class="form-group">
+			<label for="kormosespa" class="col-sm-2 control-label" >ΚΟΡΜΟΣ ΕΣΠΑ <br><small>(άτομα που είχαν σύμβαση με το ΕΑΠ πριν από ΕΣΠΑ)</small></label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="kormosespa" id="kormosespa"  value="<?php echo $contractual->kormosespa ?>">
+			</div>
+		</div>					
+	</div>
+	
+<!----------	Στοιχεία Τρέχουσας Σύμβασης ----->
+	
+	<div id="stoixeiatrexoysassymvasis" class="tab-pane fade">
+
+		<div class="form-group">
+			<label for="name"  >Στοιχεία Τρέχουσας Σύμβασης</label>
+		</div>
+
+		<div class="form-group">
+			<label for="aa" class="col-sm-2 control-label" >Α.Α. </label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" name="aa" id="aa" value="<?php echo $contractual->aa ?>">
+				</div>
+		</div>		
+		
+		<div class="form-group">
+			<label for="arithmostrexousassymvasis" class="col-sm-2 control-label" >Αριθμός Τρέχουσας Σύμβασης<small> (δεν περιλαμβάνονται χωριστά οι τροποποιητικές)</small></label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" name="arithmostrexousassymvasis" id="arithmostrexousassymvasis" value="<?php echo $contractual->arithmostrexousassymvasis ?>">	
+				</div>
+		</div>	
+
+		<div class="form-group">
+			<label for="imerominiaypografistrexoysassymvasis" class="col-sm-2 control-label" >Ημερομηνία Υπογραφής Τρέχουσας Σύμβασης</label>
+				<div class="col-sm-10">
+					<input type="date" class="form-control" name="imerominiaypografistrexoysassymvasis" id="imerominiaypografistrexoysassymvasis" value="<?php echo $contractual->imerominiaypografistrexoysassymvasis ?>">			
+				</div>
+		</div>
+		
+		<div class="form-group">
+			<label for="aksonasproteraiotitas" class="col-sm-2 control-label" >Άξονας Προτεραιότητας</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" name="aksonasproteraiotitas" id="aksonasproteraiotitas" value="<?php echo $contractual->aksonasproteraiotitas ?>">
+			</div>
+		</div>			
+
+		
+		<div class="form-group">
+			<label for="titlosaksonaproteraiotitas" class="col-sm-2 control-label" >Τίτλος Άξονα προτεραιότητας</label>
+			<div class="col-sm-10">
+				<textarea id="titlosaksonaproteraiotitas" class="form-control" name="titlosaksonaproteraiotitas" cols="25" rows="5"><?php echo $contractual->titlosaksonaproteraiotitas ?></textarea>
+			</div>
+		</div>	
+
+		<div class="form-group">
+			<label for="ergopraksi" class="col-sm-2 control-label" >Έργο-Πράξη</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="ergopraksi" id="ergopraksi" value="<?php echo $contractual->ergopraksi ?>">
+			</div>
+		</div>	
+		
+		<div class="form-group">
+			<label for="misops" class="col-sm-2 control-label" >MIS-ΟΠΣ</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="misops" id="misops" value="<?php echo $contractual->misops ?>">
+			</div>
+		</div>		
+
+		<div class="form-group">
+			<label for="arithmosypoergoyolografos" class="col-sm-2 control-label" >Αριθμός Υποέργου Ολογράφως</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="arithmosypoergoyolografos" id="arithmosypoergoyolografos" value="<?php echo $contractual->arithmosypoergoyolografos ?>">
+			</div>
+		</div>	
+
+		<div class="form-group">
+			<label for="arithmosypoergoy" class="col-sm-2 control-label" >Αριθμός Υποέργου</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="arithmosypoergoy" id="arithmosypoergoy" value="<?php echo $contractual->arithmosypoergoy ?>">
+			</div>
+		</div>	
+
+		<div class="form-group">
+			<label for="titlosypoergoy" class="col-sm-2 control-label" >Τίτλος Υποέργου </label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="titlosypoergoy" id="titlosypoergoy" value="<?php echo $contractual->titlosypoergoy ?>">
+			</div>
+		</div>	
+		
+		<div class="form-group">
+			<label for="arithmospaketoyergasias" class="col-sm-2 control-label" >Αριθμός Πακέτου Εργασίας</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="arithmospaketoyergasias" id="arithmospaketoyergasias" value="<?php echo $contractual->arithmospaketoyergasias ?>">
+			</div>
+		</div>		
+
+		<div class="form-group">
+			<label for="titlospaketoyergasias" class="col-sm-2 control-label" >Τίτλος Πακέτου Εργασίας</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="titlospaketoyergasias" id="titlospaketoyergasias"  value="<?php echo $contractual->titlospaketoyergasias ?>">
+			</div>
+		</div>	
+		
+		<div class="form-group">
+			<label for="apofasiylopoiisisypoergoymetaidiamesa" class="col-sm-2 control-label" >Απόφαση Υλοποίησης Υποέργου Με Τα Ίδια Μέσα</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="apofasiylopoiisisypoergoymetaidiamesa" id="apofasiylopoiisisypoergoymetaidiamesa"  value="<?php echo $contractual->apofasiylopoiisisypoergoymetaidiamesa ?>">
+			</div>
+		</div>	
+
+		<div class="form-group">
+			<label for="apofaside" class="col-sm-2 control-label" >Απόφαση ΔΕ</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="apofaside" id="apofaside"  value="<?php echo $contractual->apofasiylopoiisisypoergoymetaidiamesa ?>">
+			</div>
+		</div>	
+		
+		<div class="form-group">
+			<label for="apofasiedel" class="col-sm-2 control-label" >Απόφαση ΕΔΕΛ</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="apofasiedel" id="apofasiedel"  value="<?php echo $contractual->apofasiedel ?>">
+			</div>
+		</div>	
+		
+		<div class="form-group">
+			<label for="posotrexoysassymvasisolografos" class="col-sm-2 control-label" >Ποσό Τρέχουσας Σύμβασης Ολογράφως </label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="posotrexoysassymvasisolografos" id="posotrexoysassymvasisolografos"  value="<?php echo $contractual->posotrexoysassymvasisolografos ?>">
+			</div>
+		</div>			
+
+
+		<div class="form-group">
+			<label for="posotrexoysassymvasis" class="col-sm-2 control-label" >Ποσό Τρέχουσας Σύμβασης </label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="posotrexoysassymvasis" id="posotrexoysassymvasis"  value="<?php echo $contractual->posotrexoysassymvasis ?>">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="diarkeiatrexoysassymvasis" class="col-sm-2 control-label" >Διάρκεια Τρέχουσας Σύμβασης Σε Μήνες</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="diarkeiatrexoysassymvasis" id="diarkeiatrexoysassymvasis"  value="<?php echo $contractual->diarkeiatrexoysassymvasis ?>">
+			</div>
+		</div>	
+
+		<div class="form-group">
+			<label for="enarksitrexoysassymvasis" class="col-sm-2 control-label" >Έναρξη Τρέχουσας Σύμβασης </label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="enarksitrexoysassymvasis" id="enarksitrexoysassymvasis"  value="<?php echo $contractual->enarksitrexoysassymvasis ?>">
+			</div>
+		</div>	
+
+		<div class="form-group">
+			<label for="liksitrexoysassymvasis" class="col-sm-2 control-label" >Λήξη Τρέχουσας Σύμβασης </label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="liksitrexoysassymvasis" id="liksitrexoysassymvasis"  value="<?php echo $contractual->liksitrexoysassymvasis ?>">
+			</div>
+		</div>	
+		
+		<div class="form-group">
+			<label for="epistimonikosypeythinosergoypraksis" class="col-sm-2 control-label" >Επιστημονικός Υπεύθυνος Έργου-Πράξης</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="epistimonikosypeythinosergoypraksis" id="epistimonikosypeythinosergoypraksis"  value="<?php echo $contractual->epistimonikosypeythinosergoypraksis ?>">
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<label for="epistimonikosypeythinosypoergoy" class="col-sm-2 control-label" >Επιστημονικός Υπεύθυνος Υποέργου</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="epistimonikosypeythinosypoergoy" id="epistimonikosypeythinosypoergoy"  value="<?php echo $contractual->epistimonikosypeythinosypoergoy ?>">
+			</div>
+		</div>	
+	
+		
+		<div class="form-group">
+			<label for="degiaypografineassymvasis" class="col-sm-2 control-label" >ΔΕ Για Υπογραφή Νέας Σύμβασης</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="degiaypografineassymvasis" id="degiaypografineassymvasis"  value="<?php echo $contractual->degiaypografineassymvasis ?>">
+			</div>
+		</div>	
+		
+	 </div>			
+		
+		
+	</div>	
+	
+	<div class="row">
+	
+		<div class='col-xs-2 col-md-2'>
+				<input type='hidden' name='contractualid' value="<?php echo $contractual->id ?>"> 
+				<input type='hidden' name='deletecontractual' value='FALSE'> 
+		</div>
+
+		<div class='col-xs-3 col-md-3'>
+			<button type="submit" class="btn btn-lg btn-primary btn-block">Επικαιροποίηση Συμβασιούχου</button>
+		</div>
+
+</form>
+
+<form class="form-horizontal" role="form"  method="POST" action="change_contractual.php">
+
+	
+		
+			<div class='col-xs-1 col-md-1'>
+				<input type='hidden' name='contractualid' value="<?php echo $contractual->id ?>"> 
+				<input type='hidden' name='deletecontractual' value='TRUE'> 
+			</div>
+			<div class='col-xs-3 col-md-3'>
+				<button type="submit" class="btn btn-lg btn-primary btn-block">Διαγραφή Συμβασιούχου</button>
+			</div>
+	</div>
+</form>
+
+</div>
